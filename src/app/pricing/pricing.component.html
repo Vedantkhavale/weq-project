@@ -1,0 +1,41 @@
+<div class="cointainer">
+    <div class="main1">
+        <b style="font-size: 35px; width: 65%;">Ready to get started with Lemo Wares?</b>
+        <p>Choose the package that suits you</p>
+        <div class="toggle-switch">
+            <label>
+              <span>Monthly</span>
+              <input type="checkbox" [(ngModel)]="isYearly" />
+              <span class="slider"></span>
+            </label>
+            <span class="discount" *ngIf="isYearly">20% discount</span>
+            <span>Yearly</span>
+          </div>
+    
+
+    <div class="plans">
+        <div class="plan basic-plan">
+          <h3>Basic</h3>
+          <p>{{ isYearly ? yearlyBasicPrice : monthlyBasicPrice }} USD</p>
+        </div>
+        <div class="plan premium-plan">
+          <h3>Premium</h3>
+          <p>{{ isYearly ? yearlyPremiumPrice : monthlyPremiumPrice }} USD</p>
+        </div>
+      </div>
+    </div>
+
+        <div class="main2">
+            <div class="pricing-card" *ngFor="let plan of plans">
+              <h3>{{ plan.name }}</h3>
+              <p>{{ plan.description }}</p>
+              <h1>{{ plan.price }}<span>/ per month</span></h1>
+              <button (click)="selectPlan(plan)">Choose this Plan</button>
+              <ul>
+                <li *ngFor="let feature of plan.features">
+                  <i class="fa fa-check"></i> {{ feature }}
+                </li>
+              </ul>
+            </div>
+          </div>
+</div>

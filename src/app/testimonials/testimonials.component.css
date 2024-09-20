@@ -1,0 +1,84 @@
+.cointainer{
+    width: 100%;
+        height: auto;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+}
+
+.main1{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.main1-1{
+    width: 40%;
+}
+
+.main1-2{
+   padding-top: 90px;
+   
+}
+
+.h2{
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.main2{
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.main2-1{
+   width: 24%;
+   height: auto;
+   display: flex;
+   flex-direction: column;
+   padding: 15px;
+}
+
+.main2-1 b{
+    font-size: 35px;
+}
+
+
+.main2-2{
+    width: 27%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-evenly;
+    padding: 10px;
+    gap: 20px;
+}
+
+.main2-3,.main2-4{
+    display: flex;
+    align-items: self-end;
+    justify-content: space-evenly;
+    width: 28%;
+    height: auto;
+    gap: 20px;
+    padding: 5px;
+}

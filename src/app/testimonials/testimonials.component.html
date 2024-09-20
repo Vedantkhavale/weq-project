@@ -1,0 +1,43 @@
+<div class="cointainer 1">
+      <div class="main1 2" >
+            <div class="main1-1 4">
+                <div class="h1 6">
+                     <h1>Real Stories from Real Customers</h1>
+                </div>
+                <div class="h2  7" *ngFor="let item of filteredTestimoni" >
+                        <b *ngIf="item.id==1">{{item.customer}}</b>
+                        <p *ngIf="item.id==1">{{item.text}}</p>
+                </div>
+            </div>
+
+            <div class="main1-2  5">
+                <div class="h2 8&9" *ngFor="let item of testimoni">
+                    <b>{{item.customer}}</b>
+                    <p >{{item.text}}</p>
+            </div>
+            </div>
+      </div>
+
+      <div class="main2  3">
+                <div class="main2-1">
+                    <b>We serve over 100 Nigerian Websites</b>
+                    <p>Connect LemonWares with your favourite tools that you use daily and keep things on track.</p>
+                
+                </div>
+       
+                <div class="main2-2">
+                   <div class="main2-3">
+                        <img src="../../assets/images/translated_image_en (12).png" alt="">
+                        <img src="../../assets/images/translated_image_en (13).png" alt="">
+                        <img src="../../assets/images/translated_image_en (14).png" alt="">
+                   </div>
+       
+                   <div class="main2-4">
+                     <img src="../../assets/images/translated_image_en (15).png" alt="">
+                     <img src="../../assets/images/translated_image_en (16).png" alt="">
+                     <img src="../../assets/images/translated_image_en (17).png" alt="">
+                   </div>
+                </div>
+           </div>
+      </div>
+  
